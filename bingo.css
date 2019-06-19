@@ -1,0 +1,34 @@
+#botoes{
+    margin-top: 10px;
+}
+
+#area1, #area2, #area3{
+    height: 250px;
+}
+
+#numbers1, #area1 {
+    background-color: pink;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#numbers2, #area2 {
+    background-color: lightskyblue;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#numbers3, #area3 {
+    background-color: yellow;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#area1, #area2 p, #area3 p{
+    font-size: 200px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 250px;
+}
+
+body{
+    height: auto;
+    width: auto;
+}

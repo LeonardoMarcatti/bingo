@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/casino-games-1/512/Bingo-512.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="bingo.css">
+        <title>Bingo!</title>    
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="botoes">
+                <div class="col-5">
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary" id="sorteio">Sortear!</button>
+                        <button type="button" class="btn btn-success" id="prox">Próxima rodada!</button>
+                        <button type="button" class="btn btn-danger" id="limpa">Limpa Tudo!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group" id="rodada1">
+                        <div id="area1"><p></p></div>
+                        <label for="numbers1">Nº Sorteados</label>
+                        <textarea name="numbers1" id="numbers1" class="form-control" cols="30" rows="7"></textarea>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group" id="rodada2" hidden>
+                        <div id="area2"><p></p></div>
+                        <label for="numbers2">Nº Sorteados</label>
+                        <textarea name="numbers2" id="numbers2" class="form-control" cols="30" rows="7"></textarea>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group" id="rodada3" hidden>
+                        <div id="area3"><p></p></div>
+                        <label for="numbers3">Nº Sorteados</label>
+                        <textarea name="numbers3" id="numbers3" class="form-control" cols="30" rows="7"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="jquery.js" ></script>
+        <script src="bootstrap.bundle.js"></script>
+        <script src="bingo.js"></script>
+    </body>
+</html>
