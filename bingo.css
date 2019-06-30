@@ -21,7 +21,7 @@
     font-family: 'Roboto Mono', monospace;
 }
 
-#area1, #area2 p, #area3 p{
+#area1, #area2, #area3{
     font-size: 200px;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
