@@ -19,9 +19,9 @@
                 </div>
                 <div class="row justify-content-center">
                     <div id="btn-group">
-                        <button type="button" id="ant" class="btn btn-warning" data-toggle="modal" data-target="#alert" disabled>Rodada Anterior</button>
+                        <button type="button" id="ant" class="btn btn-warning" data-toggle="modal" data-target="#rodada_anterior" disabled>Rodada Anterior</button>
                         <button type="button" class="btn btn-success" id="prox">Próxima rodada</button>
-                        <button type="button" class="btn btn-danger" id="limpa">Limpa Tudo</button>
+                        <button type="button" class="btn btn-danger" id="limpa" data-toggle="modal" data-target="#limpa_tudo">Limpa Tudo</button>
                     </div>
                 </div>
             </div>
@@ -49,8 +49,8 @@
                 </div>
             </div>
       
-      <!-- Modal -->
-      <div class="modal fade" id="alert" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <!-- Modal Rodada Anterior-->
+      <div class="modal fade" id="rodada_anterior" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -63,6 +63,24 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-dismiss="modal" id="nao">Não</button>
               <button type="button" class="btn btn-danger" data-dismiss="modal" id="sim">Sim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Limpa Tudo-->
+      <div class="modal fade" id="limpa_tudo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cuidado!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">Todos os números serão apagados. Deseja continuar?</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="nao_limpa">Não</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" id="sim_limpa">Sim</button>
             </div>
           </div>
         </div>
