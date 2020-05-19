@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/casino-games-1/512/Bingo-512.png" type="image/gif" sizes="16x16">
+        <link rel="stylesheet" href="bingo.css">
+        <title>Bingo!</title>    
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="form-group">
+                <div class="row justify-content-center" id="botoes">
+                    <div class="col-4">
+                        <button type="button" class="btn btn-primary btn-block" id="sorteio">Sortear!</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div id="btn-group">
+                        <button type="button" id="ant" class="btn btn-warning" data-toggle="modal" data-target="#rodada_anterior" disabled>Rodada Anterior</button>
+                        <button type="button" class="btn btn-success" id="prox">Próxima rodada</button>
+                        <button type="button" class="btn btn-danger" id="limpa" data-toggle="modal" data-target="#limpa_tudo">Limpa Tudo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <div id="area1"><h3>N° Sorteado</h3><p></p></div>
+                        <label for="numbers1" id="label1">Nº Sorteados</label>
+                        <textarea name="numbers1" id="numbers1" class="form-control" cols="30" rows="7" readonly></textarea>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <div id="area2" hidden><h3>N° Sorteado</h3><p></p></div>
+                        <label for="numbers2" id="label2" hidden>Nº Sorteados</label>
+                        <textarea name="numbers2" id="numbers2" class="form-control" cols="30" rows="7" hidden></textarea>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group" id="rodada3">
+                        <div id="area3" hidden><h3>N° Sorteado</h3><p></p></div>
+                        <label for="numbers3" id="label3" hidden>Nº Sorteados</label>
+                        <textarea name="numbers3" id="numbers3" class="form-control" cols="30" rows="7" hidden></textarea>
+                    </div>
+                </div>
+            </div>
+      
+      <!-- Modal Rodada Anterior-->
+      <div class="modal fade" id="rodada_anterior" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cuidado!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">Todos os números dessa rodada serão apagados.Deseja continuar?</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="nao">Não</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" id="sim">Sim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Limpa Tudo-->
+      <div class="modal fade" id="limpa_tudo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Cuidado!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">Todos os números serão apagados. Deseja continuar?</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal" id="nao_limpa">Não</button>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" id="sim_limpa">Sim</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+        <script src="jquery.js" ></script>
+        <script src="bootstrap.bundle.js"></script>
+        <script src="bingo.js"></script>
+    </body>
+</html>
